@@ -1,6 +1,7 @@
 body{
 	font-family: 'Dancing Script', cursive;
 	background-color: #02010a;
+	margin-bottom: 0px;
 }
 #cabecera{
 	background-color:  #5b7989;
@@ -22,13 +23,45 @@ body{
 }
 #menu a{
 	color: white;
+}
+.pagina-actual{
 	text-decoration: none;
 }
-#contenido{
+#principal{
 	background-color: #82c3a6;
+}
+#secundaria{
+	background-color: #d5c75f;
 }
 .imagen-adaptativa{
 	width: 70%;
-	margin: 0 auto;
+	margin-left: 10%;
 	padding: 5%;
+}
+#retrato,
+#paisaje{
+  	transition: transform 1s;
+}
+#paisaje:hover{
+	transform: rotate(10deg);
+}
+#retrato:hover{
+	transform: translate(20px, -5px);
+}
+footer{
+	margin-top: 0px;
+	background-color: #C6d5c5;
+	padding: 10%;
+}
+footer > h2:first-child{
+    -webkit-margin-before: 0em;
+}
+footer >h2{
+	-webkit-margin-after: 0em;	
+}
+tr>td:first-child{
+	width: 20px;
+}
+.logo-adaptive{
+	width: 100%;
 }
