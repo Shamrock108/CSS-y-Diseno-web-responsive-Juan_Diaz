@@ -13,7 +13,6 @@ body{
     margin: 0 auto;
     text-align: center;
 }
-/*Versión movil*/
 #contenedor{
 	margin: 0 auto;
 	max-width: 100%;
@@ -38,6 +37,11 @@ body{
 	margin-left: 10%;
 	padding: 5%;
 }
+.imagen-adaptativa-galeria{
+	width: 70%;
+	margin-left: 10%;
+	padding: 5%;
+}
 #retrato,
 #paisaje{
   	transition: transform 1s;
@@ -47,6 +51,15 @@ body{
 }
 #retrato:hover{
 	transform: translate(20px, -5px);
+}
+.galeria>img:first-child{
+	filter: blur(10px);
+}
+.galeria>img:nth-child(even){
+	filter: grayscale(100%);
+}
+.galeria>img:nth-child(3){
+	filter: sepia(90%);
 }
 footer{
 	margin-top: 0px;
