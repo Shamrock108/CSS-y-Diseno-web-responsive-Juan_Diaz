@@ -49,6 +49,15 @@ body{
 	margin-left: 10%;
 	padding: 5%;
 }
+.filtro-blur{
+	filter: blur(10px);
+}
+.filtro-grises{
+	filter: grayscale(100%);
+}
+.filtro-sepia{
+	filter: sepia(90%);
+}
 #retrato,
 #paisaje{
   	transition: transform 1s;
@@ -59,14 +68,8 @@ body{
 #retrato:hover{
 	transform: translate(20px, -5px);
 }
-.galeria>img:first-child{
+.galeria > img:first-child{
 	filter: blur(10px);
-}
-.galeria>img:nth-child(even){
-	filter: grayscale(100%);
-}
-.galeria>img:nth-child(3){
-	filter: sepia(90%);
 }
 footer{
 	margin-top: 0px;
@@ -128,10 +131,12 @@ tr>td:first-child{
 	#secundaria > a{
 		width: 50%;
 	}
-	#secundaria > img{
-		width: 33.33%;
-	}
 	footer > div{
 		width: 25%;
+	}
+	.imagen-adaptativa-galeria{
+		width: 25%;
+	    padding: 2%;
+	    margin-left: 2%;
 	}
 }
